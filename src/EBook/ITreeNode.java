@@ -6,6 +6,14 @@ import java.util.ArrayList;
  * 	@author xug12345
  *	节点树操作
  */
+/**
+ * @author xug12345
+ *
+ */
+/**
+ * @author xug12345
+ *
+ */
 public interface ITreeNode {
 	
 	/**
@@ -45,4 +53,5 @@ public interface ITreeNode {
 	 * @return 图集
 	 */
 	String[] getImages();
+
 }

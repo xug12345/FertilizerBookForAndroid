@@ -35,8 +35,12 @@ public class BookTreeNode implements ITreeNode {
 		ArrayList<ITreeNode> result=new ArrayList<ITreeNode>();
 		for(String keyword : keywords)
 		{
-			if(title.contains(keyword)
-					||description.contains(keyword))
+			if(title.contains(keyword))
+			{
+				result.add(this);
+				break;
+			}
+			else if(description.contains(keyword))
 			{
 				result.add(this);
 				break;
@@ -65,6 +69,11 @@ public class BookTreeNode implements ITreeNode {
 	public String[] getImages() {
 		// TODO Auto-generated method stub
 		return images;
+	}
+
+	static public ITreeNode readNodeInfo(String xml) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
